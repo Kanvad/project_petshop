@@ -7,7 +7,6 @@
     <link rel="icon" type="image/png" href="img/icon_page.png">
     <title>Cửa hàng thú cưng</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
@@ -18,48 +17,35 @@
 <body>
     <div class="topnav">
         <a class="tag-index" href="index.html">Trang chủ</a>
-        <a class="tag-index" href="sanpham.php">Sản phẩm</a>
+        <a class="active tag-index" href="sanpham.php">Sản phẩm</a>
         <a class="tag-index" href="dathang.php"><i class="fa-solid fa-cart-shopping"></i> Đặt hàng</a>
-        <a class="active tag-index" href="about.html">Giới thiệu</a>
+        <a class="tag-index" href="about.html">Giới thiệu</a>
         <div class="topnav-right">
             <a class="split" href="#">Pet Shop</a>
             <div class="icon"></div>
         </div>
     </div>
 
-    <div class="about-section">
-        <h1>About Us Page</h1>
-        <p>Chào mừng bạn đến với cửa hàng thú cưng của chúng tôi! Chúng tôi mong muốn cung cấp những sản phẩm tốt nhất
-            cho những người bạn thú cưng của bạn.</p>
-        <p>Với trang web này bạn có thể thêm, xóa, sửa các đơn đặt hàng của bạn.</p>
-    </div>
+    <div class="main">
+        <h1>Tất cả các sản phẩm của cửa hàng</h1>
+        <div class="all-item">
+            <?php
+            include("config.php");
+            $sql = "SELECT * FROM sanpham";
+            $result = mysqli_query($conn, $sql);
 
-    <h2 class="title-team">Các thành viên nhóm</h2>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="" alt="Hinh" style="width:100%">
-                <div class="container">
-                    <h2>Huỳnh Tấn Phát</h2>
-                    <p class="title">Lập trình viên</p>
-                    <p>Tìm kiếm hình ảnh và thiết kế website</p>
-                    <p>phat.2374802010376@vanlanguni.vn</p>
-                    <p><button class="button">Contact</button></p>
+            while ($row = mysqli_fetch_assoc($result)) {
+            ?>
+                <div class="card">
+                    <img src="img/<?php echo $row["hinh"] ?>" alt="Snack Jinny" style="width:100%">
+                    <h1><?php echo $row["ten"] ?></h1>
+                    <p class="price"><?php echo $row["gia"] ?> VND </p>
+                    <p><button onclick="window.location.href = 'dathang.html';">Mua</button></p>
                 </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="" alt="Hinh" style="width:100%">
-                <div class="container">
-                    <h2>Lương Nhật Tiến</h2>
-                    <p class="title">Lập trình viên</p>
-                    <p>Tìm kiếm hình ảnh và thiết kế website</p>
-                    <p>mike@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
+            <?php
+            }
+            $conn->close();
+            ?>
         </div>
 
     </div>

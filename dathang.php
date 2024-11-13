@@ -11,14 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <div class="topnav">
         <a class="tag-index" href="index.html">Trang chủ</a>
-        <a class="active tag-index" href="sanpham.html">Sản phẩm</a>
-        <a class="tag-index" href="dathang.html">Đặt hàng</a>
+        <a class="tag-index" href="sanpham.php">Sản phẩm</a>
+        <a class="active tag-index" href="dathang.php"><i class="fa-solid fa-cart-shopping"></i> Đặt hàng</a>
         <a class="tag-index" href="about.html">Giới thiệu</a>
         <div class="topnav-right">
             <a class="split" href="#">Pet Shop</a>
@@ -35,28 +34,7 @@
     </div>
 
     <div class="footer">
-        <!-- <h1>Footer</h1> -->
-        <div class="footer-address">
-            <p>Địa chỉ: Phường 1, Quan 1, Tp.HCM</p>
-            <p>Số điện thoại: 0101112424</p>
-            <p>Email: shopthucung@email.com</p>
-        </div>
-        <div class="footer-about">
-            <a href="index.html">Trang chủ</a>
-            <a href="sanpham.html">Sản phẩm</a>
-            <a href="dathang.html">Đặt hàng</a>
-            <a href="about.html">About</a>
-        </div>
-        <div class="footer-icon">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-
-    </div>
-    <div class="copyright">
-        <p>Copyright © 2024 Pet Shop</p>
+        <h1>Footer</h1>
     </div>
 
     <script src="main.js"></script>
