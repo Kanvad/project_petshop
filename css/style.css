@@ -96,12 +96,12 @@ body {
 .footer-address p {
     text-align: left;
     margin: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
-.footer-address p:hover {
+/* .footer-address p:hover {
     color: black;
-}
+} */
 
 .footer-about {
     display: flex;
@@ -118,6 +118,7 @@ body {
 
 .footer-about a:hover {
     color: black;
+    text-decoration: underline;
 }
 
 .footer-icon {

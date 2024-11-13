@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -34,7 +35,28 @@
     </div>
 
     <div class="footer">
-        <h1>Footer</h1>
+        <!-- <h1>Footer</h1> -->
+        <div class="footer-address">
+            <p>Địa chỉ: Phường 1, Quan 1, Tp.HCM</p>
+            <p>Số điện thoại: 0101112424</p>
+            <p>Email: shopthucung@email.com</p>
+        </div>
+        <div class="footer-about">
+            <a href="index.html">Trang chủ</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="dathang.html">Đặt hàng</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="footer-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Pet Shop</p>
     </div>
 
     <script src="main.js"></script>
