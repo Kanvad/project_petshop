@@ -27,7 +27,7 @@
     </div>
 
     <div class="main">
-        <h1>Tất cả các sản phẩm của cửa hàng</h1>
+        <h1 class="title-sanpham">Tất cả các sản phẩm của cửa hàng</h1>
         <div class="all-item">
             <?php
             include("config.php");
@@ -37,10 +37,10 @@
             while ($row = mysqli_fetch_assoc($result)) {
             ?>
                 <div class="card">
-                    <img src="img/<?php echo $row["hinh"] ?>" alt="Snack Jinny" style="width:100%">
+                    <img src="img/<?php echo $row["hinh"] ?>" alt="Snack Jinny" width="300px" height="270px">
                     <h1><?php echo $row["ten"] ?></h1>
                     <p class="price"><?php echo $row["gia"] ?> VND </p>
-                    <p><button onclick="window.location.href = 'dathang.html';">Mua</button></p>
+                    <p class="btn-mua"><button onclick="window.location.href = 'dathang.html';">Mua</button></p>
                 </div>
             <?php
             }

@@ -48,7 +48,7 @@ body {
 }
 
 .topnav .split:hover {
-    color: blue;
+    color: #173B45;
 }
 
 .icon {
@@ -179,9 +179,10 @@ body {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    margin: 0 30px;
+    margin: 20px 30px;
     text-align: center;
     font-family: arial;
+    height: auto;
 }
 
 .price {
@@ -190,16 +191,23 @@ body {
     margin: 10px 0;
 }
 
+.card h1 {
+    height: 100px;
+    margin: 0 10px;
+    text-align: center;
+}
+
 .card button {
     border: none;
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #000;
+    background-color: goldenrod;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+    bottom: 0;
 }
 
 .card button:hover {
@@ -232,4 +240,21 @@ fieldset {
 .title {
     color: orange;
     padding: 20px 20px 0 20px;
+}
+
+.all-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.title-sanpham {
+    color: #FA4032;
+    margin: 20px;
+    text-align: center;
+}
+
+.main {
+    background-color: #F4F6FF;
 }
