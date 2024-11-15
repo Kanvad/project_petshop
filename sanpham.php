@@ -30,7 +30,7 @@
         <h1 class="title-sanpham">Tất cả các sản phẩm của cửa hàng</h1>
         <div class="all-item">
             <?php
-            include("config.php");
+            include("php/config.php");
             $sql = "SELECT * FROM sanpham";
             $result = mysqli_query($conn, $sql);
 
@@ -50,32 +50,4 @@
 
     </div>
 
-    <div class="footer">
-        <!-- <h1>Footer</h1> -->
-        <div class="footer-address">
-            <p>Địa chỉ: Phường 1, Quan 1, Tp.HCM</p>
-            <p>Số điện thoại: 0101112424</p>
-            <p>Email: shopthucung@email.com</p>
-        </div>
-        <div class="footer-about">
-            <a href="index.html">Trang chủ</a>
-            <a href="sanpham.html">Sản phẩm</a>
-            <a href="dathang.html">Đặt hàng</a>
-            <a href="about.html">About</a>
-        </div>
-        <div class="footer-icon">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-
-    </div>
-    <div class="copyright">
-        <p>Copyright © 2024 Pet Shop</p>
-    </div>
-
-    <script src="main.js"></script>
-</body>
-
-</html>
+    <?php include('php/footer.php'); ?>

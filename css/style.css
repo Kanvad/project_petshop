@@ -18,7 +18,7 @@ body {
     display: block;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 1000;
 }
 
 .tag-index {
@@ -48,7 +48,7 @@ body {
 }
 
 .topnav .split:hover {
-    color: #173B45;
+    color: #173b45;
 }
 
 .icon {
@@ -250,11 +250,55 @@ fieldset {
 }
 
 .title-sanpham {
-    color: #FA4032;
+    color: #fa4032;
     margin: 20px;
     text-align: center;
 }
 
 .main {
-    background-color: #F4F6FF;
+    background-color: #f4f6ff;
+    min-height: 50vh;
+}
+
+h1#title-dathang {
+    margin: 10px 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+}
+
+.box1 h4 {
+    float: left;
+}
+
+.box1 button {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.box1 {
+    margin-bottom: 10px;
+}
+
+.text-success {
+    color: greenyellow;
+    text-align: center;
+}
+
+.form-group label {
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.btn-edit {
+    margin-top: 15px !important;
+}
+
+.text-destroy {
+    color: red;
+    text-align: center;
+}
+
+.tong_tien, .tong_tien td {
+    background-color: #e5f3a7 !important;
 }
