@@ -19,7 +19,7 @@
         <a class="tag-index" href="index.html">Trang chủ</a>
         <a class="active tag-index" href="sanpham.php">Sản phẩm</a>
         <a class="tag-index" href="dathang.php"><i class="fa-solid fa-cart-shopping"></i> Đặt hàng</a>
-        <a class="tag-index" href="about.html">Giới thiệu</a>
+        <a class="tag-index" href="about.html">About</a>
         <div class="topnav-right">
             <a class="split" href="#">Pet Shop</a>
             <div class="icon"></div>
@@ -40,7 +40,7 @@
                     <img src="img/<?php echo $row["hinh"] ?>" alt="Snack Jinny" width="300px" height="270px">
                     <h1><?php echo $row["ten"] ?></h1>
                     <p class="price"><?php echo $row["gia"] ?> VND </p>
-                    <p class="btn-mua"><button onclick="window.location.href = 'dathang.html';">Mua</button></p>
+                    <p class="btn-mua"><button onclick="window.location.href = 'dathang.php';">Mua</button></p>
                 </div>
             <?php
             }
