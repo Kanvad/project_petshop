@@ -6,10 +6,10 @@
             <p>Email: shopthucung@email.com</p>
         </div>
         <div class="footer-about">
-            <a href="index.html">Trang chủ</a>
-            <a href="sanpham.html">Sản phẩm</a>
+            <a href="index.php">Trang chủ</a>
+            <a href="sanpham.php">Sản phẩm</a>
             <a href="dathang.php">Đặt hàng</a>
-            <a href="about.html">About</a>
+            <a href="about.php">About</a>
         </div>
         <div class="footer-icon">
             <i class="fa-brands fa-facebook"></i>

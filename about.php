@@ -17,10 +17,10 @@
 
 <body>
     <div class="topnav">
-        <a class="tag-index" href="index.html">Trang chủ</a>
+        <a class="tag-index" href="index.php">Trang chủ</a>
         <a class="tag-index" href="sanpham.php">Sản phẩm</a>
         <a class="tag-index" href="dathang.php"><i class="fa-solid fa-cart-shopping"></i> Đặt hàng</a>
-        <a class="active tag-index" href="about.html">About</a>
+        <a class="active tag-index" href="about.php">About</a>
         <div class="topnav-right">
             <a class="split" href="#">Pet Shop</a>
             <div class="icon"></div>
